@@ -9083,227 +9083,456 @@ padding-left: .5em;
 /* ===== wp.css ===== */
 /*.wp_flex_wrap a{color: #3a3a3a;}*/
 
+
+
 /*================================================
+
  *  ワードプレス共通
+
  ================================================*/
+
   .wp_flex_wrap {
+
     display: flex;
+
     justify-content: space-between
+
 	 
+
   }
+
   .wp_main_area {
+
     width: 70%;
+
   }
+
   .wp_side_area {
+
+
 
     width: 26%;
 
+
+
   }
 
+
+
 /* 大きい画面用の設定-------------- */
+
 @media (min-width:768px) {
 
 
+
+
+
   .wp_side_area {
+
     position: sticky;
+
     top: 150px;
+
     align-self: flex-start;
-  }
-}
-/* -------------end------------- */
-/* 小さい画面用の設定-------------- */
-@media (max-width:767px){
-	  .wp_flex_wrap {
-flex-wrap: wrap;
-		  
-		  
-	 
-  }
-	
-	.wp_main_area {
-    width: 100%;
-	  
-  }
-  .wp_side_area {
-width: 100%;
 
   }
-	
-.wp_main_area{
-	margin-bottom: 30px;
-	}
+
 }
+
 /* -------------end------------- */
+
+/* 小さい画面用の設定-------------- */
+
+@media (max-width:767px){
+
+	  .wp_flex_wrap {
+
+flex-wrap: wrap;
+
+		  
+
+		  
+
+	 
+
+  }
+
+	
+
+	.wp_main_area {
+
+    width: 100%;
+
+	  
+
+  }
+
+  .wp_side_area {
+
+width: 100%;
+
+
+
+  }
+
+	
+
+.wp_main_area{
+
+	margin-bottom: 30px;
+
+	}
+
+}
+
+/* -------------end------------- */
+
+
+
+
 
 
 
 /*================================================
+
  *  ワードプレス一覧
+
  ================================================*/
 
 
+
+
+
 /* 大きい画面用の設定-------------- */
+
 @media (min-width:768px){
+
 .wp_info_flex_wrap{
+
 	display: flex;
+
 	margin-bottom: 20px;
+
 	padding-bottom: 20px;
+
 	border-bottom: 1px dotted #cccccc;
+
     justify-content: space-between;
+
 }
 
+
+
 .wp_info_flex_wrap:last-child{
+
 	border-bottom:none;
+
 }
+
 .wp_info_img{width: 30%;
+
 	order:1;
+
 }
+
     
+
+
 
 .wp_info_txt{width: 68%;
+
 	order:2;}
+
 .wp_info_txt_day{font-size: 88%;}
+
     
+
 .wp_info_txt_title{font-size: 113%;
+
 color: #E09696;
+
 margin-bottom: 10px;
+
 font-weight: 700;}
+
 	}
+
 /* -------------end------------- */
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px){
+
 .wp_info_flex_wrap{
+
 	margin-bottom: 10px;
+
 	padding-bottom: 10px;
+
 	border-bottom: 1px dotted #CCCCCC;
+
 }
 
+
+
 .wp_info_flex_wrap:last-child{
+
 	border-bottom:none;
+
 }
+
 .wp_info_img img{width: 100%;
+
 	height: auto;
+
 }
+
 .wp_info_txt{padding-left: 0px;
+
 	margin-bottom: 5px;}
+
 .wp_info_txt_day{font-size: 90%;}
+
 .wp_info_txt_title{font-size: 120%;
+
 margin-bottom: 5px;
+
 font-weight: 600;}
+
 	}
+
 /* -------------end------------- */
+
+
+
+
+
 
 
 
 
 /* 投稿記事 ------*/
+
 .post_box{
+
 margin-bottom: 50px;}
 
 
 
 
+
+
+
+
+
 .post_info{
+
 	text-align: right;
+
 	margin: 20px 0 0;
+
 	clear: both;
+
 	font-size: 90%;
+
 	}
+
+
+
 
 
 /* ページリンク */
+
 span.oldpage	{
+
 	display: block;
+
 	background-color: rgba(255,255,255,0.50);
+
 	padding-top: 5px;
+
 	padding-right: 10px;
+
 	padding-bottom: 5px;
+
 	padding-left: 10px;
+
     border-radius: 3px;
+
     margin-bottom: 30px;
+
 }
+
+
 
 span.newpage{
+
 	display: block;
+
 	background-color: rgba(255,255,255,0.50);
+
 	padding-top: 5px;
+
 	padding-right: 10px;
+
 	padding-bottom: 5px;
+
 	padding-left: 10px;
+
     border-radius: 3px;
+
      margin-bottom: 30px;
+
 }
+
+
 
 p.pagelink a{font-size: 88%;
+
 }
+
+
 
 p.pagelink	{overflow: hidden;
+
 	width: 100%}
 
+
+
 /* 大きい画面用の設定-------------- */
+
 @media (min-width:768px){
+
 span.oldpage{
+
 	float: left;
+
 	}
+
+
 
 span.newpage{float: right;
+
 }
+
 }
+
 /* -------------end------------- */
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px){
+
 span.oldpage{
+
 		margin-bottom: 10px;
+
 	}
 
+
+
 span.newpage{text-align: right;
+
 }
+
 }
+
 /* -------------end------------- */
+
+
+
 
 
 /* サイドバー */
 
 
+
+
+
 .widgettitle {
+
   border-bottom: 1px solid #E6ABAB;
+
   border-top: 3px solid #E6ABAB;
+
   margin-bottom: 10px;
+
   padding: 10px 5px;
+
   font-size: 94%;
 
+
+
   display: flex;
+
   align-items: center;
+
 }
+
+
 
 /* 共通アイコン設定 */
+
 .widgettitle::before {
+
   font-family: "Font Awesome 5 Free";
+
   font-weight: 900;
+
   margin-right: 8px;
+
   font-size: 0.95em;
+
 	
+
 color: #E6ABAB;}
 
+
+
 /* よく読まれているコラム */
+
 .widget-popular::before {
+
   content: "\f02e"; /* bookmark */
+
 }
+
+
 
 /* 最近の投稿 */
+
 .widget-recent::before {
+
   content: "\f017"; /* clock */
+
 }
+
+
 
 /* アーカイブ */
+
 .widget-archive::before {
+
   content: "\f073"; /* calendar */
+
 }
 
+
+
 /* カテゴリー */
+
 .widget-category::before {
+
   content: "\f02b"; /* tag */
+
 }
+
+
+
+
+
+
+
 
 
 
@@ -9311,745 +9540,1605 @@ color: #E6ABAB;}
 
 
 .wp_side_area li li	{
+
 	margin-bottom: 7px;
+
 	padding-bottom: 7px;
+
 	border-bottom: 1px dotted #333;}
 
+
+
 .wp_side_area li li a	{text-decoration: none;
+
 position: relative;
+
 padding-left: 1em;
+
 display: block;
+
 font-size: 88%;}
 
+
+
 .wp_side_area li li a:before {
+
 font-family: "Font Awesome 5 Free";
+
 content:'\f054';
+
 font-weight: 700;
+
 position: absolute;
+
 top: 50%;
+
 left: 0px;
+
 margin-top: -12px;
+
 color: rgba(87,46,18,0.50);
+
 }	
 
+
+
 /* 大きい画面用の設定-------------- */
+
 @media (min-width:768px){
+
 	.wp_side_area ul li.widget	{margin-bottom: 50px}
+
 	}
+
 /* -------------end------------- */
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px){
+
 	.wp_side_area ul li.widget	{margin-bottom: 20px}
+
 	}
+
 	
+
 /* -------------end------------- */
+
+
+
+
 
 
 
 /* 記事内の画像 */
+
 .aligncenter	{display: block;
+
 	margin-left: auto;
+
 	margin-right: auto;}
 
+
+
 div.post_box img	{border: none;
+
 width: 100%;
+
 height: auto;}
+
+
 
 .alignleft	{float: left;
+
 	margin-right: 10px;
+
 	margin-bottom: 10px}
+
+
 
 .alignright	{float: right;
+
 	margin-left: 10px;
+
 	margin-bottom: 10px}
 
+
+
 .wp-caption	{border: solid 1px #aaaaaa;
+
 	text-align: center;
+
 	padding-top: 5px}
+
 	
+
 	.breadcrumbs{font-size: 12px;
+
 	color: #212121;
+
 	}
 
+
+
 .size-large{width: 100% !important;
+
 height: auto;}
+
+
 
 .size-medium{
+
 	width: 50% !important;
+
 height: auto;}
+
+
 
 .size-thumbnail{width: 25% !important;
+
 height: auto;}
+
 /* ページ番号リンク */
 
+
+
 .pagenum	{display: flex;
+
 justify-content: center;
+
 margin-bottom: 30px;}
 
+
+
 .pagenum  a,
+
 .pagenum span
+
 	{
+
 	display: block;
+
 	padding: 5px;
+
 	text-decoration: none;
+
 	
+
 	width: 1.5em;
+
 	line-height: 1.5em;
+
 	border-radius: 50%;
+
 	text-align: center;
+
 color: #fff;
+
 margin-left: 5px;
+
 margin-right: 5px;
+
 font-weight: 700;}
 
+
+
 .pagenum a	{background-color:rgba(89,87,87,0.80);
+
 box-sizing: content-box;}
+
+
+
 
 
 .pagenum span{background-color:#E09696;
+
 box-sizing: content-box;}
+
+
 
 #beautypage .pagenum span{background-color:#a68b62;
+
 box-sizing: content-box;}
 
+
+
 .cate_pagetitle{
+
 	font-weight: 700;
+
 	font-size: 110%;
+
 	margin-bottom: 1em;
+
 		text-align: center;
+
 }
 
+
+
 /* BACKリンクボタン ------------------------------*/
+
 /* ---------------------------------------------------- */
 
 
+
+
+
 .bt_back a {
+
 color: #595757;
+
 text-decoration: underline; /* テキストとアイコンの下線を追加 */
+
 text-decoration-color: #595757; /* 下線の色を指定 */
+
 }
+
+
 
 .bt_back a i{
+
 color: #E09696;
+
 padding-right: .5em;
+
 }
+
+
 
 #beautypage .bt_back a i{
+
 color: #a68b62;
+
 padding-right: .5em;
+
 }
 
+
+
 /*=========================================
+
+
 
  *  医療コラム
 
+
+
  ==========================================*/
 
+
+
 .inside_outside_mc {
+
   padding-top: 50px;
+
   padding-bottom: 50px;
+
   border-bottom: 1px solid #ccc;
+
 }
 
+
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px){
+
 .inside_outside_mc {
+
   padding-bottom: 30px;
+
 }
+
 }
+
 /* -------------end------------- */
+
 .mc_post_meta {
+
   display: flex;
+
   justify-content: space-between;
+
   margin-bottom: 10px;
+
   align-items: center;
+
 }
+
 .mc_post_date {
+
   font-size: 75%;
+
 }
+
 .mc_post_date::before {
+
   margin-right: 5px;
+
   font-family: "Font Awesome 6 Free";
+
   content: "\f073";
+
   font-weight: 900;
+
 }
+
 .mc_post_meta_category a {
+
   font-size: 80%;
+
   background-color: #F8EDED;
+
   padding: 1px 5px;
+
   margin-right: 0.5em;
+
   display: inline-block;
+
   text-decoration: none;
+
 color: #595757;
+
 }
+
+
 
 .mc_post_meta_category a:last-child {
+
   margin-right: 0;
+
 }
+
 .mc_title {
+
   font-size: 188%;
+
   width: 100%;
+
   line-height: 1.4;
+
   margin-bottom: 30px;
+
   border-bottom: 1px solid #ccc;
+
   padding-bottom: 20px;
+
 }
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px) {
+
   .mc_title {
+
     font-size: 163%;
+
     margin-bottom: 20px;
+
     padding-bottom: 10px;
+
   }
+
 	
+
 	.mc_post_meta {
+
 flex-wrap: wrap;
 
+
+
 }
+
 .mc_post_date {
+
 width: 100%;
+
 margin-bottom:5px;
+
 }
+
+
 
 .mc_post_meta_category {
+
 width: 100%;
+
 }
+
 }
+
 /* -------------end------------- */
+
 .mc_box {
+
   margin-bottom: 60px;
+
   padding-top: 140px;
+
   margin-top: -140px;
+
 }
+
 .mc_box p {
+
   margin-bottom: 20px;
+
 }
+
 .mc_box p:has(+ .mc_list) {
+
   margin-bottom: 10px;
+
 }
+
 .mc_box p:has(+ .mc_num_list) {
+
   margin-bottom: 10px;
+
 }
+
 .mc_box p:has(+ .mc_dl) {
+
   margin-bottom: 10px;
+
 }
+
 .mc_block {
+
   margin-bottom: 40px;
+
 }
+
+
 
 .mc_block_wrap {
+
   margin-bottom: 40px;
+
 }
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px) {
+
   .mc_box p {
+
     margin-bottom: 15px;
+
   }
+
   .mc_box {
+
     margin-bottom: 30px;
+
     padding-top: 70px;
+
     margin-top: -70px;
+
   }
+
   .mc_block {
+
     margin-bottom: 30px;
+
   }
+
 	
+
 	.mc_block_wrap {
+
   margin-bottom: 30px;
+
 }
+
 }
+
 /* -------------end------------- */
 
+
+
 /* ======================
+
    見出し
+
 ====================== */
+
+
 
 .mc_headline {
+
   padding-top: 0.5em;
+
   padding-left: 0.5em;
+
   padding-bottom: 0.5em;
+
   padding-right: .5em;
+
   font-size: 138%;
+
   background-color: #F8EDED;
+
   border-left: solid 5px #E09696;
+
   margin-bottom: 20px;
+
 }
+
 .mc_headline_sub {
+
   font-size: 125%;
+
   margin-bottom: 10px;
+
   padding-bottom: 5px;
+
   background: linear-gradient(to right, #E6ABAB 20%, #ddd 20%);
+
   background-repeat: no-repeat;
+
   background-size: 100% 3px;
+
   background-position: bottom;
+
 }
+
+
 
 .mc_headline_minor {
+
   font-size: 107%;
+
   margin-bottom: 8px;
+
   padding-bottom: 3px;
+
  border-bottom: 1px dashed #E6ABAB;
+
 }
+
+
 
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px) {
+
   .mc_headline {
+
     font-size: 113%;
+
     margin-bottom: 15px;
+
 	  line-height: 1.4;
+
   }
+
   .mc_headline_sub {
+
     font-size: 107%;
+
   }
+
   .mc_headline_minor {
+
     font-size: 100%;
+
   }
+
 }
+
 /* -------------end------------- */
 
+
+
 /* ======================
+
    目次
+
 ====================== */
+
+
 
 .mc_mokuji_box {
+
   padding: 20px 30px;
+
   border: 1px solid #ccc;
+
   margin-bottom: 40px;
+
 }
+
 /* ヘッダー横並び */
+
 .mc_mokuji_header {
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
 }
+
 /* チェックボックス非表示 */
+
 #toc_toggle {
+
   display: none;
+
 }
+
 /* ボタン表示（初期＝開いている） */
+
 .toc_btn::after {
+
   content: "▲ 閉じる";
+
   cursor: pointer;
+
   font-size: 88%;
+
 }
+
 /* 閉じた時の文言 */
+
 #toc_toggle:not(:checked) ~ .mc_mokuji_header .toc_btn::after {
+
   content: "▼ 開く";
+
   font-size: 88%;
+
 }
+
 /* 目次の開閉初期＝開いている */
+
 .mc_mokuji_list {
+
   max-height: 500px;
+
   overflow: hidden;
+
   transition: max-height 0.3s ease;
+
   margin-top: 10px;
+
 }
+
 /* 閉じた状態 */
+
 #toc_toggle:not(:checked) ~ .mc_mokuji_list {
+
   max-height: 0;
+
   margin-top: 0;
+
 }
+
 /* 見た目 */
+
 .mc_mokuji_title {
+
   font-size: 88%;
+
 }
+
 .mc_mokuji_list li {
+
   margin-bottom: 5px;
+
   font-size: 88%;
+
 }
+
 .mc_mokuji_list li a {
+
   color: #595757;
+
   text-decoration: none;
+
   border-bottom: 1px solid transparent;
+
 }
+
 .mc_mokuji_list li a:hover {
+
   border-bottom: 1px solid currentColor;
+
 }
+
 .mc_mokuji_list a::after {
+
   content: "\f078"; /* fa-chevron-down */
+
   font-family: "Font Awesome 5 Free";
+
   font-weight: 900;
+
   margin-left: 0.6em;
+
   font-size: 0.8em;
+
 }
+
+
 
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px){
+
 .mc_mokuji_box {padding: 15px 15px;
+
 margin-bottom: 30px;}
+
 }
+
 /* -------------end------------- */
 
+
+
 /* ======================
+
    リスト表示
+
 ====================== */
+
+
 
 .mc_box p.mc_list_title {
+
   display: inline-block;
+
   padding: 2px 15px;
+
   font-size: 94%;
+
   border: 1px solid #E6ABAB;
+
   border-radius: 999999px;
+
   background: #fff;
+
   margin-bottom: 10px;
+
 }
+
 .mc_list {
+
   padding-left: 1em;
+
   margin-bottom: 20px;
+
 }
+
 .mc_list li {
+
   position: relative;
+
   padding-left: 1em;
+
 }
+
 .mc_list li::before {
+
   content: "";
+
   position: absolute;
+
   left: 0;
+
   top: 0.6em;
+
   width: 8px;
+
   height: 8px;
+
   border-radius: 50%;
+
   background: #E6ABAB;
+
 }
 
+
+
 /* ======================
+
    番号付きリスト
+
 ====================== */
+
 .mc_num_list {
+
   padding-left: 1em;
+
   margin-bottom: 20px;
+
   counter-reset: mc-num;
+
 }
+
 .mc_num_list li {
+
   position: relative;
+
   padding-left: 1.5em;
+
   counter-increment: mc-num;
+
 }
+
 .mc_num_list li::before {
+
   content: counter(mc-num) ".";
+
   position: absolute;
+
   left: 0;
+
   top: 0;
+
   color: #E6ABAB;
+
   font-weight: bold;
+
 }
 
+
+
 /* ======================
+
    コラム用テーブル
+
 ====================== */
+
 .tb_mc {
+
   border-spacing: 0;
+
   border-collapse: collapse;
+
   width: 100%;
+
   border-top-width: 1px;
+
   border-right-width: 1px;
+
   border-top-style: solid;
+
   border-right-style: solid;
+
   border-top-color: #CCC;
+
   border-right-color: #CCC;
+
   background-color: #ffffff;
+
   font-size: 94%;
+
 }
+
 .tb_mc th {
+
   vertical-align: middle;
+
   padding-top: 10px;
+
   padding-right: 10px;
+
   padding-left: 10px;
+
   padding-bottom: 10px;
+
   border-bottom-width: 1px;
+
   border-bottom-style: solid;
+
   border-bottom-color: #CCC;
+
   border-left-width: 1px;
+
   border-left-style: solid;
+
   border-left-color: #CCC;
+
   /*background-color: #F8EDED;*/
+
   text-align: center;
+
   background-color: #eee;
+
 }
+
 .tb_mc td {
+
   vertical-align: middle;
+
   padding-top: 10px;
+
   padding-right: 10px;
+
   padding-left: 10px;
+
   padding-bottom: 10px;
+
   border-bottom-width: 1px;
+
   border-bottom-style: solid;
+
   border-bottom-color: #CCC;
+
   border-left-width: 1px;
+
   border-left-style: solid;
+
   border-left-color: #CCC;
+
   background-color: #fff;
+
 }
 
+
+
 /* ======================
+
    コラム用dl
+
 ====================== */
+
 .mc_dl dt {
+
   clear: left;
+
   float: left;
+
   width: 12em;
+
   padding-left: .5em;
+
 }
+
 .mc_dl dd {
+
   padding-left: 12.5em;
+
   margin-bottom: 7px;
+
   padding-bottom: 7px;
+
   border-bottom-width: 1px;
+
   border-bottom-style: dashed;
+
   border-bottom-color: #CCC;
+
 }
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px) {
+
   .mc_dl dt {
+
     clear: none;
+
     float: none;
+
     width: 100%;
+
   }
+
   .mc_dl dd {
+
     padding-left: .5em;
+
     margin-bottom: 5px;
+
     padding-bottom: 5px;
+
     border-bottom-width: 1px;
+
     border-bottom-style: dashed;
+
     border-bottom-color: #CCC;
+
   }
+
 }
+
 /* -------------end------------- */
 
+
+
 /* ======================
+
    関連記事
+
 ====================== */
+
 .mc_related_box {
+
   position: relative;
+
   padding: 56px 30px 30px;
+
   border: 1px solid #ccc;
+
 }
+
 .mc_related_box .mc_related_title {
+
   position: absolute;
+
   left: 30px;
+
   top: -8px;
+
   line-height: 1;
+
   padding-right: 10px;
+
   padding-left: 10px;
+
   width: 7em;
+
   background-color: #ffffff;
+
   display: inline-flex;
+
   align-items: center;
+
 }
+
 .mc_related_box .mc_related_title::before {
+
   content: "\f0c1";
+
   font-family: "Font Awesome 5 Free";
+
   font-weight: 900;
+
   margin-right: 6px;
+
 }
+
 .mc_related_dl {
+
   font-size: 94%;
+
 }
+
 .mc_related_dl dt {
+
   clear: left;
+
   float: left;
+
   width: 7em;
+
 }
+
 .mc_related_dl dd {
+
   padding-left: 7em;
+
   margin-bottom: 10px;
+
   padding-bottom: 10px;
+
   border-bottom-width: 1px;
+
   border-bottom-style: dashed;
+
   border-bottom-color: #CCC;
+
 }
+
 .mc_related_dl dd a {
+
   text-decoration: underline;
+
   text-decoration-color: #595757;
+
     color: #595757;
+
 }
+
 .mc_related_dl dd:last-child {
+
   margin-bottom: 0px;
+
   padding-bottom: 0px;
+
   border-bottom-style: none;
+
 }
+
 .mc_related_cate {
+
   font-size: 80%;
+
   background-color: #F8EDED;
+
   padding: 1px 5px;
+
 text-decoration: none;  
+
   display: inline-block;        /* 新しいボックス化 */
+
 	margin-bottom: 2px; 
+
 }
+
+
+
+
 
 
 
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px) {
+
   .mc_related_box {
+
     padding: 40px 15px 15px;
+
   }
+
   .mc_related_box .mc_related_title {
+
     left: 15px;
+
     top: -8px;
+
     padding-right: 5px;
+
     padding-left: 5px;
+
   }
+
   .mc_related_dl dt {
+
     clear: none;
+
     float: none;
+
     width: 100%;
+
   }
+
   .mc_related_dl dd {
+
     padding-left: 0%;
+
   }
+
 }
+
 /* -------------end------------- */
+
+
 
 /* ======================
+
    一覧リンクボタン
+
 ====================== */
+
 .mc_bt_ichiran {
+
   position: absolute;
+
   top: 16px;
+
   right: 30px;
+
   background-color: #595757;
+
   padding: 5px 10px;
+
   width: 8em;
+
   border-radius: 3px;
+
 }
+
 .mc_bt_ichiran a {
+
   display: block;
+
   color: #ffffff;
+
   font-size: 88%;
+
 }
+
 .mc_bt_ichiran:after {
+
   font-family: "Font Awesome 5 Free";
+
   font-weight: 900;
+
   content: "\f105";
+
   position: absolute;
+
   top: 50%;
+
   right: 10px;
+
   margin-top: -12px;
+
   color: #ffffff;
+
 }
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px) {
+
   .mc_bt_ichiran {
+
     top: 10px;
+
     right: 15px;
+
   }
+
   .mc_bt_ichiran:after {
+
     margin-top: -10px;
+
   }
+
 }
+
 /* -------------end------------- */
+
+
+
+
 
 
 
 /*=========================================
 
+
+
  *  医療コラム一覧
 
+
+
  ==========================================*/
+
 .mc_ichiran_dl {
+
 }
+
   .mc_ichiran_dl dt {
+
 font-weight: 500;
+
 	font-size: 113%;
+
  margin-bottom: 10px;
+
 }
+
   .mc_ichiran_dl dd {
 
+
+
   margin-bottom: 20px;
+
   padding-bottom: 20px;
+
   border-bottom-width: 1px;
+
   border-bottom-style: dashed;
+
   border-bottom-color: #CCC;
+
 }
+
   .mc_ichiran_dl dd a {
+
 	    color: #595757;
+
 }
+
   .mc_ichiran_dl:last-child {
+
   margin-bottom: 0px;
+
   padding-bottom: 0px;
+
   border-bottom-style: none;
+
 }
+
+
+
 
 
 .mc_ichiran_cate a {
+
   background-color: #F8EDED;
+
   padding: 1px 5px;
+
    margin-left: .5em;
+
   display: inline-block;
+
   font-size: 80%;
+
   text-decoration: none;
+
 color: #595757;
+
 }
+
+
+
+
+
 
 
 
 
 .mc_ichiran_dl dd a h2 {
+
 	margin-bottom: 5px;
+
 font-weight: 500;
+
 	font-size: 138%;
+
 	line-height: 1.4;
+
 }
+
+
 
 	/* 小さい画面用の設定-------------- */
+
 @media (max-width:767px) {
+
   .mc_ichiran_dl dt {
 
+
+
   }
+
   .mc_ichiran_dl dd {
+
   }
+
 }
+
 /* -------------end------------- */
 
 
+
+
+
 /*=========================================
+
+
 
  *  医療コラムパンクズ調整
 
+
+
  ==========================================*/
 
+
+
 /* PCではフルタイトル表示、スマホでは短縮タイトル表示 */
+
 .breadcrumb-title-short {
+
   display: none;
+
 }
 
+
+
 @media screen and (max-width: 767px) {
+
   .breadcrumb-title-full {
+
     display: none;
+
   }
+
   .breadcrumb-title-short {
+
     display: inline;
+
   }
+
 }
+
+
+
 
 
 /*=========================================
 
+
+
  *  医療コラム参考文献監修
+
+
 
  ==========================================*/
 
+
+
 .mc_medical_source{
+
 padding-top: 30px;
+
 padding-bottom: 30px;
+
 background-color: rgba(207,190,167,0.20);
+
 margin-bottom: 40px;}
+
     
+
 /* 小さい画面用の設定-------------- */
+
 @media (max-width:767px){
+
 .mc_medical_source{
+
 padding-top: 20px;
+
 padding-bottom: 20px;
+
 margin-bottom: 30px;
+
 	/* 横幅いっぱい */
+
 margin-left: calc(50% - 50vw);
+
 margin-right: calc(50% - 50vw);
+
 line-height: 1.6;
 
+
+
     }
+
 }
-/* -------------end------------- */  
+
+/* -------------end------------- */
+
+
+
+/* =========================================
+
+ *  医療コラム：図鑑レイアウト（写真＋解説の横並び）
+
+ *  css/wp.css の末尾に追記
+
+ *  使用: 医療コラム「イボの種類図鑑」ほか
+
+ ==========================================*/
+
+.mc_zukan {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 25px;
+
+  margin-bottom: 40px;
+
+}
+
+.mc_zukan_photo {
+
+  flex: 0 0 40%;
+
+  margin: 0;
+
+}
+
+.mc_zukan_photo img {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  aspect-ratio: 4 / 3;
+
+  object-fit: cover;
+
+  border-radius: 6px;
+
+}
+
+.mc_zukan_photo figcaption {
+
+  margin-top: 6px;
+
+  font-size: 85%;
+
+  line-height: 1.4;
+
+  color: #777;
+
+  text-align: center;
+
+}
+
+/* AI生成画像の注記（キャプション内の2行目） */
+
+.mc_zukan_ai {
+
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 90%;
+
+  color: #999;
+
+}
+
+.mc_zukan_text {
+
+  flex: 1;
+
+  min-width: 0;
+
+}
+
+.mc_box .mc_zukan_text p:last-child {
+
+  margin-bottom: 0;
+
+}
+
+/* 小さい画面用の設定-------------- */
+
+@media (max-width:767px) {
+
+  .mc_zukan {
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+  }
+
+  .mc_zukan_photo {
+
+    flex: none;
+
+    width: 100%;
+
+    max-width: 400px;
+
+    margin: 0 auto;
+
+  }
+
+}
+
+/* -------------end------------- */
+
 
 
 /* ===== 追加CSS_mc_zukan.css（本番は wp.css 末尾に追記） ===== */
@@ -10106,8 +11195,8 @@ line-height: 1.6;
   }
   .mc_zukan_photo {
     flex: none;
-    width: 100%;
-    max-width: 400px;
+    width: 75%;
+    max-width: 280px;
     margin: 0 auto;
   }
 }
